@@ -6,7 +6,7 @@ Use Cloudflare Workers to provide a WebDav interface for Cloudflare R2.
 
 Currently the server advertises WebDAV Class 1 and Class 2 (LOCK/UNLOCK) support.
 
-This Worker shares the `webdav` R2 bucket with [r2-explorer](https://github.com/xxHolicY/r2-explorer), a browser-based management UI for the same files: files uploaded through a WebDAV client appear there, and files added there show up in WebDAV listings. The Wrangler bindings use different variable names (`bucket` here, `webdav` in r2-explorer), but both must point at the same R2 bucket name, or the two views drift apart.
+This Worker provides the WebDAV interface for the `webdav` R2 bucket, which it shares with [r2-explorer](https://github.com/xxHolicY/r2-explorer), the browser-based management UI for the same files: files uploaded through a WebDAV client appear there, and files added there show up in WebDAV listings. The Wrangler bindings use different variable names (`bucket` here, `webdav` in r2-explorer), but both must point at the same R2 bucket name, or the two views drift apart.
 
 ## Usage
 
